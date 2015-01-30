@@ -1,5 +1,4 @@
 # Projects
 
-This is a test! 
+Space for test & project code! 
 
-yay :)
