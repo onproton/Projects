@@ -20,8 +20,8 @@ public class Validate {
         if(attempts==4) {
             System.out.println("Sorry, you have used all your password attempts.");
         }
+        }
     }
-}
 
     public static boolean checkValid(String password) {
         if (password.equals("yes")) {
