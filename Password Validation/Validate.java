@@ -10,25 +10,21 @@ public class Validate {
         while(attempts<4) {
             System.out.print("Enter Password: ");
             String password = input.next();
-        if (checkValid(password)) {
-            System.out.println("Valid Password, Welcome");
-        }
-        else {
-            System.out.println("Invalid Password. " + "attempted " + attempts + "/3");
-            attempts++;
-        }
-        if(attempts==4) {
-            System.out.println("Sorry, you have used all your password attempts.");
-        }
+            if (checkValid(password)) {
+                System.out.println("Valid Password, Welcome");
+                break;
+            }
+            else {
+                System.out.println("Invalid Password. " + "attempted " + attempts + "/3");
+                attempts++;
+            }
+            if(attempts==4) {
+                System.out.println("Sorry, you have used all your password attempts.");
+            }
         }
     }
-
+    
     public static boolean checkValid(String password) {
-        if (password.equals("yes")) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return (password.equals("yes"));
     }
 }
