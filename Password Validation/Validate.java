@@ -8,6 +8,7 @@ public class Validate {
         Scanner input = new Scanner(System.in);
         int attempts = 0;
         int maxAttempts = 3;
+        
         while(attempts<3) {
             System.out.print("Enter Password: ");
             String password = input.next();
