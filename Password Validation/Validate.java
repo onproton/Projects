@@ -6,8 +6,9 @@ public class Validate {
     
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int attempts = 1;
-        while(attempts<4) {
+        int attempts = 0;
+        int maxAttempts = 3;
+        while(attempts<3) {
             System.out.print("Enter Password: ");
             String password = input.next();
             if (checkValid(password)) {
@@ -15,10 +16,13 @@ public class Validate {
                 break;
             }
             else {
-                System.out.println("Invalid Password. " + "attempted " + attempts + "/3");
+                System.out.println("Invalid Password. " + "attempted " + (attempts + 1) + "/3");
                 attempts++;
             }
-            if(attempts==4) {
+            
+            boolean maxAttemptsExceeded = attempts == maxAttempts;
+            
+            if(maxAttemptsExceeded) {
                 System.out.println("Sorry, you have used all your password attempts.");
             }
         }
