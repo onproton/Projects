@@ -25,7 +25,7 @@ public class Program1_Eliza {
         
         // prints the char values of the variables 'myGrade' and 'myFriendsGrade'
         System.out.println("Our grades are " + myGrade + " and " + myFriendsGrade);
-       // stores the result of the sum of doubNum1 and doubNum2 in a new variable, 'doubResult'
+        // stores the result of the sum of doubNum1 and doubNum2 in a new variable, 'doubResult'
         doubResult = doubNum1 + doubNum2;
         // prints out the value of the variable defined on the line above, 'doubResult'
         System.out.println("The sum of the doubles is " + doubResult);
@@ -57,5 +57,5 @@ public class Program1_Eliza {
         System.out.println("\nThis is on one line\nThis on another"); // newline
         System.out.println("This shows\thow\ttabs\twork"); //tabbing
         
-	}
+    }
 }
