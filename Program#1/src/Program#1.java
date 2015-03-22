@@ -12,7 +12,7 @@
  */
 
 public class Program1_Eliza {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         
         // variables for performing functions and arithmetic operations
         int xx = 315;
