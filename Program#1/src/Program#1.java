@@ -6,7 +6,7 @@
  * of different data types, arithmetic, concatenation, and 
  * output of results.
  *
- * Eliza Danyi - ITS320 - Basic Programming
+ * Eliza Danyi - ITS320: Java Programming 2014
  * Based upon code Taken From: "Java Programming" by Joyce Farrell
  *
  */
