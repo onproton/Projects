@@ -12,16 +12,16 @@
 import java.util.Scanner; // scanner class import
 
 public class Program3 {
-	public static void main(String[] args) {
-		int productNo; //stores the product number entered
-		int unitsSold; //stores the number of units sold entered
-		double linePrice = 0; //stores the current line total
-		double totalPrice = 0; //stores the cumulative total
+    public static void main(String[] args) {
+        int productNo; //stores the product number entered
+        int unitsSold; //stores the number of units sold entered
+        double linePrice = 0; //stores the current line total
+        double totalPrice = 0; //stores the cumulative total
         // Create a Scanner object for keyboard input.
         Scanner keyboard = new Scanner(System.in);
 
         // creates a for loop that repeats exactly 5 times by incrementing the loop control variable "counter" until >= 5
-		for(int counter = 0; counter < 5; ++counter) {
+        for(int counter = 0; counter < 5; ++counter) {
 		
             // Prompt for the product number and populate productNo variable
             System.out.print("Please enter the product number >> ");
@@ -70,10 +70,10 @@ public class Program3 {
             System.out.println("The running total for this order is: $" + totalPrice);
         }
 		
-		// Prints the final total of the 5 lines.
-		System.out.println("Thank you,");
-		System.out.println("The final total for this purchase is $" + totalPrice);
-	}
+        // Prints the final total of the 5 lines after the loop
+        System.out.println("Thank you,");
+        System.out.println("The final total for this purchase is $" + totalPrice);
+    }
 	
 }
 
