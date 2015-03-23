@@ -3,7 +3,7 @@
 * Colorado State University – ITS-320: Java Programming
 *
 * This program demonstrates using the BankAccount class to simulate a bank
-* account and demonstrates how its methods can be used to manipulate the object.
+* account and illustrates object creation and interfacing methods
 *
 * (Adapted by Eliza Danyi from "Starting Out with Java - Early Objects
 * (Third Edition) by Tony Gaddis, 2008 by Pearson Educ.)
