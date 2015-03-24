@@ -1,4 +1,4 @@
 # Projects
 
-Space for test & project code! 
+Space for test, project, & practice code! 
 
