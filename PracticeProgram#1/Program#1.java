@@ -7,7 +7,7 @@
  * output of results.
  *
  * Eliza Danyi - ITS320: Java Programming 2014
- * Based upon code Taken From: "Java Programming" by Joyce Farrell
+ * Based upon code From: "Java Programming" by Joyce Farrell
  *
  */
 

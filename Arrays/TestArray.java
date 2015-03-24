@@ -1,7 +1,5 @@
 /**
 *
-* Colorado State University – ITS-320: Java Programming
-*
 * This program creates an array of 25 integers and prints the array on  
 * 5 separate lines, 5 elements per line. Practice with arrays, for loops
 * and the system.out method printing

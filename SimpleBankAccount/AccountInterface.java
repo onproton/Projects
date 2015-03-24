@@ -1,19 +1,17 @@
 /**
 *
-* Colorado State University – ITS-320: Java Programming
-*
 * This program demonstrates using the BankAccount class to simulate a bank
 * account and illustrates object creation and interfacing methods
 *
 * (Adapted by Eliza Danyi from "Starting Out with Java - Early Objects
-* (Third Edition) by Tony Gaddis, 2008 by Pearson Educ.)
+* (Third Edition) by Tony Gaddis, 2008 by Pearson Educ.) for ITS320
 *
 */
 
 import java.util.Scanner;
 import java.text.DecimalFormat; // decimal number formatting
 
-public class Program2 {
+public class AccountInterface {
     public static void main(String[] args) {
         BankAccount account;  // To reference a BankAccount object
         double balance,       // The account's starting balance

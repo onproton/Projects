@@ -5,9 +5,9 @@
  * withdrawing, depositing, adding interest, and returnning values
  * of the account balance and interest amounts to methods in program #2
  *
- * Eliza Danyi - ITS320: Java Programming - 2014
+ * Eliza Danyi - 2014
  * (Taken/adapted from from "Starting Out with Java - Early Objects
- * (Third Edition) by Tony Gaddis, 2008 by Pearson Educ.)
+ * (Third Edition) by Tony Gaddis, 2008 by Pearson Educ.) for ITS320
  *
  */
 

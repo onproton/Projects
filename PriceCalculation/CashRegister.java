@@ -1,17 +1,15 @@
 /**
 *
-* Colorado State University – ITS-320: Java Programming
-*
 * This program calculates the total price for 5 items from a selection of any of 5 different products
 * as specified in the switch. Demonstrates using Java while and for loops as well as switches
 *
-* Programmed by Eliza Danyi in 2014
+* by Eliza Danyi - Oct 2014
 *
 */
 
 import java.util.Scanner; // scanner class import
 
-public class Program3 {
+public class CashRegister {
     public static void main(String[] args) {
         int productNo; //stores the product number entered
         int unitsSold; //stores the number of units sold entered
