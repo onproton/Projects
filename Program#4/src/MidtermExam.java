@@ -23,10 +23,8 @@ public class MidtermExam {
         for(int i = 0; i <25; i++) {
             numbers[i] = i + 1;    //i increments up to 25 (but does not include 25).
         }
-        
         printNumbers();   //calls the printNumbers method to print the array on 5 lines
     }
-	
     public static void printNumbers() {  //this is the method that defines how to print the array
         int i;   //declares local variable i
     	   
