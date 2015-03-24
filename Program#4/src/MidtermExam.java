@@ -33,12 +33,10 @@ public class MidtermExam {
         for(i = 1; i <= 25; i++) {  //for loop incrementing i up to 25
             if (i % 5 != 0) {  //determines if i is divisible by 5
                 //if i is not divisible by 5, print element with index i-1, followed by a comma
-                System.out.print(numbers[i-1]+",");
-            }
+                System.out.print(numbers[i-1]+","); }
             else {
                 //if i is divisible by 5, print the element with index i-1, followed by a new line
-                System.out.println(numbers[i-1]);
-            }
+                System.out.println(numbers[i-1]); }
         }
     }
 }
