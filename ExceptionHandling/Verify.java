@@ -1,3 +1,9 @@
+/*
+*
+* throws exception objects from their specified classes, from the superclass throwable
+* if numbers meet the permaeters defined in the validate method.
+*
+*/
 
 public class Verify {
     //variables to hold the perameters of ver, the minimum and maximum
