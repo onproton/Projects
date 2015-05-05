@@ -12,17 +12,17 @@ public class RockPaperScissors {
 		int wins = 0;
 		int losses = 0;
 		boolean playAgain = true;
-		
+
 		Scanner input = new Scanner(System.in);
-		
+
 		//loop that continues the game while the player still wants to play
-		while (playAgain == true) {			
+		while (playAgain == true) {
 			System.out.print("Ready to play Rock, Paper, Scissors? Enter your play: rock, paper, or scissors: ");
 			userPlay = input.next(); //stores the input into userPlay
 			input.nextLine(); // clears the next line
 			//prints out your play
 			System.out.println("You play " + userPlay);
-            
+
 			// as long as the user plays rock, paper, or scissors...do this
 			if (userPlay.equalsIgnoreCase("rock") || userPlay.equalsIgnoreCase("paper") || userPlay.equalsIgnoreCase("scissors")) {
 
@@ -38,10 +38,11 @@ public class RockPaperScissors {
 					System.out.println("The computer plays paper");}
 				if (compPlay == 3) {
 					System.out.println("The computer plays scissors");}
-    			
-    			
-				//compares the two plays - could add exception handling
+
+
+				//compares the two plays - could add exception handling later
 				gameWinner = RockPaperScissors.calcWinner(compPlay, userPlay);
+
 				if (gameWinner == 1) {
 					System.out.println("You Win!");
 					wins = wins + 1;} // adds to your win total
@@ -52,14 +53,14 @@ public class RockPaperScissors {
 					System.out.println("It's a tie!");
 					ties = ties + 1; // adds to your ties total
 				}
-    			
+
 				// Prints out your win/loss totals for the current game
 				System.out.println("You have " + wins + " wins, " + losses + " losses, and " + ties + " ties this game.");
-    			
+
 				// Checks if user wants to play again
 				System.out.println("Would you like to play again? (yes/no) ");
 				String userPlayAgain = input.nextLine();
-    			
+
 				// as long as yes or no entered, determines to start over or not
 				if (userPlayAgain.equalsIgnoreCase("yes") || userPlayAgain.equalsIgnoreCase("no")) {
 					if (userPlayAgain.equalsIgnoreCase("yes")) {
@@ -75,22 +76,21 @@ public class RockPaperScissors {
 					System.out.println("Would you like to play again? (yes/no) ");
 					userPlayAgain = input.nextLine();
 				}
-       
+
 			}
-            
-            
-			// else if rock paper or scissors not entered correctly, starts while loop again.
+
+			// else if rock, paper, or scissors not entered correctly, starts while loop again.
 			else {
 				System.out.println(userPlay + " is not a valid entry. Please enter rock, paper, or scissors");
 			}
-		}	
+		}
 	}
-		
-	
-	// Method to calculate the winner
-	public static int calcWinner(int compSelect, String userSelect) {		
-		int winner;
-		
+
+
+	// Method to calculate the winner given the two selections
+	public static int calcWinner(int compSelect, String userSelect) {
+		int winner; //holds the winner that is determined
+
 		// if the user(1) wins:
 		if (compSelect == 1 && userSelect.equalsIgnoreCase("paper")) {
 			winner = 1;
@@ -101,7 +101,7 @@ public class RockPaperScissors {
 		else if (compSelect == 3 && userSelect.equalsIgnoreCase("rock")) {
 			winner = 1;
 			System.out.println("Rock beats scissors.");}
-		
+
 		// if computer(2) wins:
 		else if (compSelect == 1 && userSelect.equalsIgnoreCase("scissors")) {
 			winner = 2;
@@ -112,12 +112,12 @@ public class RockPaperScissors {
 		else if (compSelect == 3 && userSelect.equalsIgnoreCase("paper")) {
 			winner = 2;
 			System.out.println("Scissors beats paper.");}
-		
-		//if it is a tie:
+
+		//else, if it is a tie:
 		else {
 			winner = 3;}
-		
-		// returns the integer 1, 2, or 3 based on who wins
+
+		// returns the integer 1, 2, or 3 based on who wins or if it is a draw
 		return winner;
 	}
 
